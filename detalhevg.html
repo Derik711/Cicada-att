@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Vaga - Cicada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/detalhevg.css">
+</head>
+
+<body>
+<div class="backgroundnav">
+    <header class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">CICADA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vagas.html">VAGAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">CADASTRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="postarvg.html">PUBLICAR VAGA</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+    <!-- Carrossel com perfil do anunciante -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-profile" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/800x200?text=Perfil+da+Empresa+1" class="d-block w-100" alt="Perfil da Empresa">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x200?text=Perfil+da+Empresa+2" class="d-block w-100" alt="Ambiente de Trabalho">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x200?text=Perfil+da+Empresa+3" class="d-block w-100" alt="Equipe">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <!-- Container principal da vaga -->
+    <div class="vaga-container">
+        <!-- Seção de Detalhes da Vaga -->
+        <fieldset>
+            <legend>Detalhes da vaga</legend>
+            <h3>Desenvolvedor Front-end Júnior</h3>
+            <p><strong>Empresa:</strong> Tech Solutions Brasil</p>
+            <p><strong>Localização:</strong> São Paulo/SP (Remoto)</p>
+            <p><strong>Tipo de contrato:</strong> CLT</p>
+            <p><strong>Salário:</strong> R$ 3.500,00 - R$ 4.200,00</p>
+            <p><strong>Data de publicação:</strong> 15/06/2023</p>
+            
+            <h4 class="mt-4">Descrição da vaga</h4>
+            <p>Estamos buscando um Desenvolvedor Front-end Júnior para se juntar ao nosso time de desenvolvimento. Você trabalhará em projetos desafiadores para clientes globais, ajudando a construir interfaces modernas e responsivas.</p>
+        </fieldset>
+
+        <!-- Seção de Requisitos -->
+        <fieldset>
+            <legend>Requisitos da vaga</legend>
+            <ul>
+                <li>Conhecimento sólido em HTML5, CSS3 e JavaScript</li>
+                <li>Experiência com React.js ou Vue.js</li>
+                <li>Familiaridade com Git e controle de versão</li>
+                <li>Conhecimento de metodologias ágeis (Scrum, Kanban)</li>
+                <li>Inglês básico para leitura de documentação</li>
+            </ul>
+        </fieldset>
+
+        <!-- Seção de Benefícios -->
+        <fieldset>
+            <legend>Benefícios da vaga</legend>
+            <ul class="beneficios-list">
+                <li>Vale-refeição ou Vale-alimentação</li>
+                <li>Plano de saúde e odontológico</li>
+                <li>Gympass</li>
+                <li>Auxílio home office (R$ 200/mês)</li>
+                <li>Horário flexível</li>
+                <li>Programa de desenvolvimento profissional</li>
+            </ul>
+        </fieldset>
+    </div>
+
+    <footer>
+        2025 Cicada - Todos os direitos reservados
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

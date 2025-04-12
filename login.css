@@ -1,0 +1,121 @@
+ /* root facilitado */
+:root {
+    --primary-color: #0494EC;       /* Azul principal vibrante */
+    --primary-hover: #0378C4;       /* Azul mais escuro para hover */
+    --secondary-color: #6EC1F5;     /* Azul claro complementar */
+    --accent-color: #FF6B6B;       /* Coral para destaques */
+    --light-color: #F8F9FA;         /* Fundo claro */
+    --dark-color: #2C3E50;         /* Texto escuro */
+    --gray-medium: #7F8C8D;        /* Cinza médio */
+    --success-color: #2ECC71;       /* Verde para sucesso */
+    --warning-color: #F39C12;      /* Amarelo/laranja */
+    --border-radius: 8px;           /* Bordas arredondadas */
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra padrão */
+    --transition: all 0.3s ease;   /* Transição suave */
+  }
+
+ /* === HEADER === */
+ header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.25rem 0;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+
+  nav a:hover {
+    background: #0377c467;
+    border-radius: 8px
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: var(--transition);
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+.login-container {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+}
+
+.login-header {
+    background-color: #0494EC;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.login-body {
+    padding: 2rem;
+}
+
+.form-control:focus {
+    border-color: #2c3e50;
+    box-shadow: 0 0 0 0.25rem rgba(44, 62, 80, 0.25);
+}
+
+.btn-login {
+    background-color: #0494EC;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-login:hover {
+    background-color: #0378C4;
+}
+
+.login-links a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,72 @@
+/* estilo Para detalhes de vagas */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vaga-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+legend {
+    width: auto;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0494EC;
+    border-bottom: none;
+}
+
+.beneficios-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.beneficios-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.beneficios-list li:before {
+    content: "✓";
+    color: #2ecc71;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.carousel-profile {
+    height: 200px;
+    background-color: #e9ecef;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.backgroundnav {
+    background-color: #0494EC;
+}
